@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tu Librería</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://fonts.googleapis.com/css?family=Rouge Script' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="first-seen-section zoom-animation">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"><b>La Librería</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="welcome-section">
+            <div class="container text-center">
+                <div class="jumbotron">
+                    <h1 class="display-4 titulo"><b>Bienvenido a La Librería</b></h1>
+                    <p class="lead">Explora nuestra colección de libros y encuentra tus próximas lecturas favoritas.</p>
+                    <br>
+                    <img src="images/ahorasi.png" width="300px">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sección de Categorías -->
+    <section id="categorias" class="mt-5">
+        <div class="container p-4">
+            <!-- Subsección Romance -->
+            <section id="romance">
+                <h2>Romance</h2>
+                <div class="row">
+                    <!-- Libro 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card book-container">
+                            <img src="images/romance1.jpg" class="card-img-top img-fluid centered-image"
+                                alt="Libro de Romance 1">
+                            <div class="text-center-container">
+                                <h5 class="card-title">Título del Libro de Romance 1</h5>
+                                <p class="card-text">Descripción del libro de Romance 1.</p>
+                                <a href="#" class="btn btn-primary">Ver más detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Libro 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card book-container">
+                            <img src="images/romance2.jpg" class="card-img-top img-fluid centered-image"
+                                alt="Libro de Romance 1">
+                            <div class="text-center-container">
+                                <h5 class="card-title">Título del Libro de Romance 1</h5>
+                                <p class="card-text">Descripción del libro de Romance 1.</p>
+                                <a href="#" class="btn btn-primary">Ver más detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Libro 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card book-container">
+                            <img src="images/romance3.jpg" class="card-img-top img-fluid centered-image"
+                                alt="Libro de Romance 1">
+                            <div class="text-center-container">
+                                <h5 class="card-title">Título del Libro de Romance 1</h5>
+                                <p class="card-text">Descripción del libro de Romance 1.</p>
+                                <a href="#" class="btn btn-primary">Ver más detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Subsección Ciencia -->
+            <section id="ciencia">
+                <!-- Repite el mismo formato que Romance pero con libros de Ciencia -->
+            </section>
+
+            <!-- Subsección Clásicos -->
+            <section id="clasicos">
+                <!-- Repite el mismo formato que Romance pero con libros de Clásicos -->
+            </section>
+
+            <!-- Subsección Suspenso -->
+            <section id="suspenso">
+                <!-- Repite el mismo formato que Romance pero con libros de Suspenso -->
+            </section>
+        </div>
+    </section>
+
+
+    <!-- Otras secciones y contenido de tu página -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                document.querySelector('.first-seen-section').classList.add('zoom-in');
+            }, 5000);
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
