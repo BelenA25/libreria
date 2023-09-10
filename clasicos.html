@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Clasicos</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rouge Script"
+      rel="stylesheet"
+    />
+    <style>
+      /* Agrega el estilo para el fondo de pantalla aquí */
+      .imagen-fondo {
+        background-size: cover;
+        background-image: url("images/fondo-clasicos.jpg");
+        background-repeat: no-repeat; /* Evita la repetición de la imagen */
+        height: 100vh;
+        padding: 50px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="imagen-fondo">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <a class="navbar-brand" href="index.html"><b>La Librería</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Agrega este código en tu archivo HTML dentro del navbar -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categorias">Catálogo</a>
+              <!-- Agregamos un contenedor para las categorías -->
+              <div class="categorias-dropdown">
+                <ul class="categorias-lista">
+                  <li><a href="#romance">Romance</a></li>
+                  <li><a href="#ciencia">Ciencia</a></li>
+                  <li><a href="#clasicos">Clásicos</a></li>
+                  <li><a href="#ciencia-ficcion">Ciencia ficción</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Contenido de la página de "Más Libros de Romance" -->
+      <div class="container mt-5">
+        <h1 class="titulo text-center">Clasicos</h1>
+        <div class="row">
+          <!-- Libro 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/clasicos1.jpeg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro Clasico 1"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">El retrato de Dorian Grey</h4>
+                <p class="card-text">Obra literaria de Oscar Wilde.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/clasicos2.jpg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro Clasico 1"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">Sherlock Holmes</h4>
+                <p class="card-text">Diviertete con el famoso detective.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/clasicos3.jpg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro Clasico 1"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">Hamlet</h4>
+                <p class="card-text">Ser o no ser.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segunda fila de libros sin imagen de fondo -->
+        <div class="row">
+          <!-- Libro 4 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/romance4.jpg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro de Romance 4"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">Amor perdido</h4>
+                <p class="card-text">Una historia de segundas oportunidades.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 5 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/romance5.jpg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro de Romance 5"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">El susurro de las olas</h4>
+                <p class="card-text">Un amor que trasciende el tiempo.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 6 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/romance6.jpg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro de Romance 6"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">Destino compartido</h4>
+                <p class="card-text">Cuando el amor es inevitable.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Segunda fila de libros sin imagen de fondo -->
+        <div class="row">
+          <!-- Libro 4 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/romance4.jpg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro de Romance 4"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">Amor perdido</h4>
+                <p class="card-text">Una historia de segundas oportunidades.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 5 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/romance5.jpg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro de Romance 5"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">El susurro de las olas</h4>
+                <p class="card-text">Un amor que trasciende el tiempo.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 6 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/romance6.jpg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro de Romance 6"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">Destino compartido</h4>
+                <p class="card-text">Cuando el amor es inevitable.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Segunda fila de libros sin imagen de fondo -->
+        <div class="row">
+          <!-- Libro 4 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/romance4.jpg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro de Romance 4"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">Amor perdido</h4>
+                <p class="card-text">Una historia de segundas oportunidades.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 5 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/romance5.jpg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro de Romance 5"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">El susurro de las olas</h4>
+                <p class="card-text">Un amor que trasciende el tiempo.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Libro 6 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card book-container">
+              <img
+                src="images/romance6.jpg"
+                class="card-img-top img-fluid centered-image"
+                alt="Libro de Romance 6"
+              />
+              <div class="text-center-container">
+                <h4 class="card-title">Destino compartido</h4>
+                <p class="card-text">Cuando el amor es inevitable.</p>
+                <a href="#" class="btn btn-primary">Ver más detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

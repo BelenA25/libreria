@@ -13,11 +13,17 @@
 
 .navbar {
   background-color: rgba(0, 0, 0, 0);
-  font-size: 25px;
+  font-size: 20px;
 }
-
+nav{
+  position: fixed!important;
+}
 .navbar-dark .navbar-nav .nav-link {
   color: black!important;
+}
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.6); /* Cambia el valor de opacidad según tu preferencia */
+  transition: background-color 0.5s ease; /* Agrega una transición para el cambio de color */
 }
 
 .navbar-dark .navbar-brand {
@@ -25,11 +31,6 @@
   font-size: 40px;
   font-family: 'Rouge Script', cursive;
 }
-
-body {
-  font-family: 'Libre Baskerville', serif;
-}
-
 .first-seen-section {
   position: relative;
 }
@@ -59,8 +60,13 @@ body {
   font-family: 'Rouge Script', cursive;
   font-size: 140px;
   text-shadow: 1px 1px 2px #082b34;
+  margin-top: 70px;
 }
-
+h2{
+  font-family: 'Rouge Script', cursive;
+  font-size: 70px;
+  text-shadow: 1px 1px 2px #082b34;
+}
 .categories {
   padding: 50px;
 }
@@ -111,3 +117,89 @@ body {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
+.btn{
+  font-family: 'Rouge Script', cursive;
+  font-size: 25px;
+  background:#B0C6D9;
+  color:#000000;
+  border:none;
+  position:relative;
+  cursor:pointer;
+  transition:800ms ease all;
+}
+.btn:hover{
+  background:#062A40;
+  color:#ffffff;
+}
+.btn:before,.btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #ffffff;
+  transition:400ms ease all;
+}
+.btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn:hover:before,.btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+@font-face {
+  font-family: 'Optima';
+  src: url('fonts/optima.ttf') format('truetype'); /* Ruta al archivo .ttf */
+  /* Opcional: Agrega formatos adicionales (eot, woff, woff2) si están disponibles */
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Optima', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+.custom-navbar {
+  transition: background-color 0.5s ease, color 0.5s ease; /* Agrega la transición para el color del texto */
+}
+
+.custom-navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+.custom-navbar.scrolled .navbar-brand,
+.custom-navbar.scrolled .nav-link {
+  color: white !important;
+}
+/* Agrega este código al final de tu archivo de estilos CSS */
+.categorias-dropdown {
+  display: none;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.categorias-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.categorias-lista li {
+  padding: 8px 16px;
+}
+
+.categorias-lista li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Mostrar el dropdown al hacer hover */
+.nav-item:hover .categorias-dropdown {
+  display: block;
+}
