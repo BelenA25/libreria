@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Detalles del Libro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rouge Script" rel="stylesheet" />
+    <style>
+        /* Personaliza tus estilos adicionales aquí si es necesario */
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <a class="navbar-brand" href="index.html"><b>La Librería</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#categorias">Catálogo</a>
+                    <div class="categorias-dropdown">
+                        <ul class="categorias-lista">
+                            <li><a href="#romance">Romance</a></li>
+                            <li><a href="#ciencia">Ciencia</a></li>
+                            <li><a href="#clasicos">Clásicos</a></li>
+                            <li><a href="#ciencia-ficcion">Ciencia ficción</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="" id="bookImage" class="img-fluid" alt="Libro de Romance 1" />
+            </div>
+            <div class="col-lg-8">
+                <h2 class="titulo" id="bookTitle">Título del Libro</h2>
+                <p id="bookAuthor">Autor: Autor del Libro</p>
+                <p id="bookDescription">Descripción del Libro.</p>
+                <p id="bookRating">Calificación: 4.5/5</p>
+                <p id="bookPrice">Precio: $20.00</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Obtener datos del libro desde la URL
+        const params = new URLSearchParams(window.location.search);
+        const title = params.get('title');
+        const author = params.get('author');
+        const description = params.get('description');
+        const rating = params.get('rating');
+        const price = params.get('price');
+        const image = params.get('image');
+
+        // Asignar valores a los elementos HTML
+        document.getElementById('bookTitle').innerText = title;
+        document.getElementById('bookAuthor').innerText = `Autor: ${author}`;
+        document.getElementById('bookDescription').innerText = description;
+        document.getElementById('bookRating').innerText = `Calificación: ${rating}/5`;
+        document.getElementById('bookPrice').innerText = `Precio: $${price}`;
+        document.getElementById('bookImage').src = image;
+    </script>
+
+</body>
+
+</html>
