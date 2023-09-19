@@ -5,6 +5,7 @@
   height: 100vh;
   color: black;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: background-image 1s, opacity 1s;
 }
 
 .welcome-section .jumbotron {

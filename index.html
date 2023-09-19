@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css?family=Rouge Script"
       rel="stylesheet"
     />
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+
   </head>
 
   <body>
@@ -396,6 +398,34 @@
           });
         });
       });
+    </script>
+    <script>
+      // Define un array con las rutas de tus imágenes
+const imagenesFondo = [
+  'images/fondo-principal.jpg',
+  'images/fondo-principal2.jpg',
+  'images/fondo-principal3.jpg',
+  'images/pexels-jess-bailey-designs-1018136.jpg'
+  // Añade tantas imágenes como necesites
+];
+
+let index = 0;
+
+function cambiarFondo() {
+  const seccion = document.querySelector('.first-seen-section');
+  const imagenAnterior = seccion.style.backgroundImage;
+
+  seccion.style.opacity = 0; // Configura la opacidad a 0 para iniciar la transición
+
+  setTimeout(() => {
+    seccion.style.backgroundImage = `url('${imagenesFondo[index]}')`;
+    seccion.style.opacity = 1; // Restablece la opacidad
+    index = (index + 1) % imagenesFondo.length;
+  }, 1000); // Transición de 1 segundo
+}
+
+setInterval(cambiarFondo, 5000);
+
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
