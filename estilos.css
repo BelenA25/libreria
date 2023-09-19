@@ -7,6 +7,10 @@
   background-color: rgba(0, 0, 0, 0.5);
   transition: background-image 1s, opacity 1s;
 }
+::selection {
+  background-color:rgba(84, 187, 212, 0.6); /* Cambia el color de fondo al resaltar */
+  color: #000; /* Cambia el color del texto al resaltar */
+}
 
 .welcome-section .jumbotron {
   background-color: rgba(255, 255, 255, 0);
