@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="estilos.css" />
     <link href="https://fonts.googleapis.com/css?family=Rouge Script" rel="stylesheet" />
     <style>
-        /* Personaliza tus estilos adicionales aquí si es necesario */
+       body{
+        background-image: url("https://images.pexels.com/photos/8704346/pexels-photo-8704346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover;
+  background-position: center;
+  height: 100vh;
+    }
     </style>
 </head>
 
@@ -30,15 +35,12 @@
                     <a class="nav-link" href="#categorias">Catálogo</a>
                     <div class="categorias-dropdown">
                         <ul class="categorias-lista">
-                            <li><a href="#romance">Romance</a></li>
-                            <li><a href="#ciencia">Ciencia</a></li>
-                            <li><a href="#clasicos">Clásicos</a></li>
-                            <li><a href="#ciencia-ficcion">Ciencia ficción</a></li>
+                            <li><a href="romance.html">Romance</a></li>
+                            <li><a href="ciencia.html">Ciencia</a></li>
+                            <li><a href="clasicos.html">Clásicos</a></li>
+                            <li><a href="ciencia-ficcion.html">Ciencia ficción</a></li>
                         </ul>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -47,14 +49,14 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-4">
-                <img src="" id="bookImage" class="img-fluid" alt="Libro de Romance 1" />
+                <img src="" id="bookImage" class="img-fluid" alt="Libro de Romance 1" style="margin-top: 40%;border: solid 2px  black;box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;" />
             </div>
             <div class="col-lg-8">
                 <h2 class="titulo" id="bookTitle">Título del Libro</h2>
-                <p id="bookAuthor">Autor: Autor del Libro</p>
+                <b><p id="bookAuthor">Autor: Autor del Libro</p>
                 <p id="bookDescription">Descripción del Libro.</p>
                 <p id="bookRating">Calificación: 4.5/5</p>
-                <p id="bookPrice">Precio: $20.00</p>
+                <p id="bookPrice">Precio: $20.00</p></b>
                 <a href="#" class="btn btn-primary">Comprar</a>
             </div>
         </div>
